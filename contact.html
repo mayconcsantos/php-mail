@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Maycon C Santos">
+<title>Maycon C Santos - Contact form using HTML/PHP</title>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    	<div id="formSuccess" hidden="true">            
+            Your email was sent successfully
+        </div>
+        <div id="formError1" hidden="true">
+            No fields can be left empty
+        </div>
+        <div id="formError2" hidden="true">
+            Invalid email adress
+        </div>
+        <div id="formError3" hidden="true">
+            Error sending the email, please try again
+        </div>
+        <br />	
+        <form action="contact.php" method="post">
+            Name:		<input type="text" name="cname" required="required"/>
+            <br />
+            Email: 		<input type="text" name="email" required="required"/>
+            <br />
+            Phone: 		<input type="text" name="phone"/>
+            <br />
+            Subject: 	<select type="checkbox" name="subject">
+                            <option value="aaa">aaa</option>
+                            <option value="bbb">bbb</option>
+                            <option value="ccc">ccc</option>
+                            <option value="ddd">ddd</option>
+                            <option value="eee">eee</option>
+                        </select>
+            <br />
+            Interested in:	<input type="checkbox" name="interest[]" value="Option 1" />Option 1
+                            <input type="checkbox" name="interest[]" value="Option 2" />Option 2
+                            <input type="checkbox" name="interest[]" value="Option 3" />Option 3
+                            <input type="checkbox" name="interest[]" value="Option 4" />Option 4
+                            <input type="checkbox" name="interest[]" value="Option 5" />Option 5
+            <br />
+            Message:	<textarea name="message" required="required"></textarea> 
+            <br />
+            <input type="reset" />
+            <input type="submit" />
+        </form>
+</body>
+</html>
