@@ -1,0 +1,9 @@
+/* Insert the file style.css in a folder called "css" or change its call in the html file */
+
+#formError1:target, 
+#formError2:target,
+#formError3:target,
+#formSuccess:target
+{
+	display:block;
+}
