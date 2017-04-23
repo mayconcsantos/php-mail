@@ -1,4 +1,5 @@
-# php
-PHP functions and services for day-to-day programming routine
+# php-mail
+This is a PHP function witch receives different types of data from a HTML form and send two emails: one with the form data to the COMPANY and other as confirmation to the CUSTOMER
 
-In these open repository I'll develop and publish some PHP functions and services quite usefull for daily programmers routines. 
+In these open repository I'll develop and publish some PHP functions and services quite usefull for daily prog
+
